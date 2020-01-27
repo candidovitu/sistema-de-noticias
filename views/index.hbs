@@ -1,0 +1,14 @@
+<header>
+    <h2>Sistema de noticias</h2>
+    <p>Poste noticias facilmente, feito em Node.js</p>
+</header>
+
+<div class="news">
+    {{#each posts}}
+      <div class="post">
+          <span class="title">{{title}}</span>
+          <p class="description">{{this.shortDescription}}</p>
+          <a href="/view/{{this._id}}" class="go">Ler mais</a>
+      </div>
+    {{/each}}
+</div>
